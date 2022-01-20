@@ -64,12 +64,12 @@ def run_csv():
                 else:
                     user_interface.no_movie_country()
 
-            # elif selected_option == 5:
-            #     csv_visual.csv_visualise(csv_data)
-            #     pass
+            elif selected_option == 5:
+                csv_visual.csv_visualise(csv_data)
+                pass
 
-            # elif selected_option == 6:
-            #     quit()
+            elif selected_option == 6:
+                quit()
 
     except SyntaxError:
         print("No file with this name")
