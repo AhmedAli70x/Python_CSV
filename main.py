@@ -56,13 +56,13 @@ def run_csv():
                 else:
                     user_interface.no_movie_actor()
 
-            # elif selected_option == 4:
-            #     input_country = user_interface.movie_country()
-            #     top_rated_movies = process.top_movies(csv_data, input_country)
-            #     if top_rated_movies:
-            #         user_interface.view_movies(top_rated_movies)
-            #     else:
-            #         user_interface.no_movie_country()
+            elif selected_option == 4:
+                input_country = user_interface.movie_country()
+                top_rated_movies = process.top_movies(csv_data, input_country)
+                if top_rated_movies:
+                    user_interface.view_movies(top_rated_movies)
+                else:
+                    user_interface.no_movie_country()
 
             # elif selected_option == 5:
             #     csv_visual.csv_visualise(csv_data)
