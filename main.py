@@ -40,13 +40,13 @@ def run_csv():
                 else:
                     user_interface.no_movie_detail()
 
-            # elif selected_option == 2:
-            #     input_year = user_interface.year_movie()
-            #     year_movies = process.movie_specif_year(csv_data, input_year)
-            #     if year_movies:
-            #         user_interface.view_movies(year_movies)
-            #     else:
-            #         user_interface.no_movie_year()
+            elif selected_option == 2:
+                input_year = user_interface.year_movie()
+                year_movies = process.movie_specif_year(csv_data, input_year)
+                if year_movies:
+                    user_interface.view_movies(year_movies)
+                else:
+                    user_interface.no_movie_year()
 
             # elif selected_option == 3:
             #     input_actor = user_interface.movie_actor()
