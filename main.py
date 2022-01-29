@@ -2,7 +2,7 @@ import csv
 
 import  user_interface  
 import process
-import csv_visual
+# import csv_visual
 
 def data_loading(file_dir = None):
     while True:
@@ -23,7 +23,7 @@ def data_loading(file_dir = None):
 def run_csv():   
     try:
         csv_data =  data_loading()
-        while csv_data:
+        while True:
             selected_option = 0
             while selected_option is not True:
                 try:
@@ -32,6 +32,7 @@ def run_csv():
                         break
                 except:
                     print("Sorry, not avalid number. Try again! ")
+            print(csv_data)
             if selected_option == 1:
                 movie_id = user_interface.movie_id()
                 movie_detail = process.movie_details(csv_data, movie_id)
